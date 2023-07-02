@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Open_CV_project )
+find_package(OpenCV REQUIRED)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Open_CV_project color_draw.cpp)
+target_link_libraries( Open_CV_project  ${OpenCV_LIBS})
